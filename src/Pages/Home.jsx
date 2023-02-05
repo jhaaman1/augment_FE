@@ -6,6 +6,7 @@ import {
   Grid,
   Heading,
   Image,
+  Input,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -196,53 +197,94 @@ const Home = () => {
             </Card>
           </Grid>
         </Box>
-        <Card
-          w="90%"
-          backgroundColor={"gray.100"}
-          m="auto"
-          mt={'5rem'}
-        >
-          <Flex w={'70%'} h='500px' m='auto' mt={5} gap='3rem'>
-            <Box  fontFamily={"Josefin sans sans-serif"}>
-              <Heading fontSize={'40px'}>See Some Benefits Joining Us</Heading>
+        <Card w="90%" backgroundColor={"gray.100"} m="auto" mt={"5rem"}>
+          <Flex w={"70%"} h="500px" m="auto" mt={5} gap="3rem">
+            <Box fontFamily={"Josefin sans sans-serif"}>
+              <Heading fontSize={"40px"}>See Some Benefits Joining Us</Heading>
               <Box mt={5}>
-                <Text fontSize={'20px'} >01 Competetive Price</Text>
-                <Text mt={3} color={'gray'}>
+                <Text fontSize={"20px"}>01 Competetive Price</Text>
+                <Text mt={3} color={"gray"}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                   eum explicabo iste veniam quam mollitia
                 </Text>
               </Box>
               <Box mt={5}>
-                <Text fontSize={'20px'} >02 Award Wining Service</Text>
-                <Text mt={3} color={'gray'}>
+                <Text fontSize={"20px"}>02 Award Wining Service</Text>
+                <Text mt={3} color={"gray"}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                   eum explicabo iste veniam quam mollitia
                 </Text>
               </Box>
               <Box mt={5}>
-                <Text fontSize={'20px'} >03 Global Converage</Text>
-                <Text mt={3} color={'gray'}>
+                <Text fontSize={"20px"}>03 Global Converage</Text>
+                <Text mt={3} color={"gray"}>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
                   eum explicabo iste veniam quam mollitia
                 </Text>
               </Box>
-              
             </Box>
-            <Image w={'50%'} h='90%' src="https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1226&q=80" />
+            <Image
+              w={"50%"}
+              h="90%"
+              src="https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1226&q=80"
+            />
           </Flex>
         </Card>
 
-        <Box margin={'auto'} w='40%' mt='5rem'>
-            <Heading fontSize={'45px'} textAlign='center' fontFamily={"Josefin sans sans-serif"}>Hey! Let's Explore Travelling The World</Heading>
+        <Box margin={"auto"} w="40%" mt="5rem">
+          <Heading
+            fontSize={"45px"}
+            textAlign="center"
+            fontFamily={"Josefin sans sans-serif"}
+          >
+            Hey! Let's Explore Travelling The World
+          </Heading>
         </Box>
-        <Box className="main_container">
-          <Image src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" className="image" />
+        {/* <Box className="main_container">
+          <Flex>
+            <Box>
+            <Image src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" className="image" />
           <Box className="overlay">
             <Heading className="head">Provanicia</Heading>
             <Text className="subhead">Colombia</Text>
             <Text className="subhead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos est quaerat similique </Text>
           </Box>
-        </Box>
+            </Box>
+          </Flex>
+          
+        </Box> */}
+
+
+        <Card w="90%" backgroundColor={"gray.100"} m="auto" mt={"5rem"}>
+          <Flex w={"70%"} h="500px" m="auto" mt={5} gap="3rem">
+          <Image
+              w={"50%"}
+              h="90%"
+              src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+            />
+            <Box fontFamily={"Josefin sans sans-serif"}>
+              <Heading fontSize={"40px"}>Explore The World With Us Today</Heading>
+              <Box mt={5}>
+                <Text fontSize={"15px"} color={"gray"}>Ferbuary of day:02</Text>
+                <Text mt={3} color={"gray"}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                  eum explicabo iste veniam quam mollitia
+                </Text>
+              </Box>
+              <Button colorScheme={'teal'} color='white' mt={'3rem'} borderRadius={'5rem'}>Read More</Button>
+            </Box>
+            
+          </Flex>
+        </Card>
+
+        <Flex margin={'auto'} w='80%' mt='5rem'>
+          <Box w='40%' textAlign={'center'} mt='8rem' >
+            <Heading >Get Update About Our Latest News</Heading>
+            <Input mt={'5'} placeholder="Enter your email address" borderLeftRadius={'5rem'} h='50px' w='60%' />
+            <Button borderRightRadius={'5rem'} h='50px' colorScheme={'teal'}>Submit</Button>
+          </Box>
+          <Image src="https://media.istockphoto.com/id/968003448/photo/positive-cheerful-young-caucasian-woman-wearing-white-casual-t-shirt-blinking-her-eyes-and.jpg?s=612x612&w=0&k=20&c=8d2h-jWlAcGXyRs4WOg72GLnG0jzM4xc_ve_8Sp6QpI=" />
+        </Flex>
       </Box>
     </>
   );
