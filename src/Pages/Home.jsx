@@ -10,8 +10,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { Footer } from "../Components/Footer";
 import SearchBox from "../Components/Search_Component";
-// import Search_Component from "../Components/Search_Component";
 import "./Home.css";
 
 const Home = () => {
@@ -285,6 +285,8 @@ const Home = () => {
           </Box>
           <Image src="https://media.istockphoto.com/id/968003448/photo/positive-cheerful-young-caucasian-woman-wearing-white-casual-t-shirt-blinking-her-eyes-and.jpg?s=612x612&w=0&k=20&c=8d2h-jWlAcGXyRs4WOg72GLnG0jzM4xc_ve_8Sp6QpI=" />
         </Flex>
+
+        <Footer/>
       </Box>
     </>
   );
